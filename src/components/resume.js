@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { Grid, Cell } from 'react-mdl';
+import Education from './education';
+import Experience from './experience';
+import Skill from './skill';
 
 class Resume extends Component {
     render() {
@@ -31,7 +34,63 @@ class Resume extends Component {
                         <hr style={{ borderTop: '3px solid #833fb2', width: '50%' }} />
                     </Cell>
                     <Cell className="resume-right-col" col={8}>
-                    
+                    <h2>Education</h2>
+                        <Education 
+                            startYear={2002}
+                            endYear={2018}
+                            schoolName="Srinakarinwirot"
+                            schoolDescription="College of social communication 
+                            innovation Computer For Communicationnnnnnnnnnnnnn"
+                        />
+                        <Education 
+                            startYear={2019}
+                            endYear={2030}
+                            schoolName="Srinakarinwirot2"
+                            schoolDescription="College of social communication 
+                            innovation Computer For Communicationnnnnnnnnnnnnn version 2"
+                        />
+
+                        <hr style={{borderTop: '3px solid #e22947'}} />
+                        <h2>Experience</h2>
+
+                        <Experience 
+                            startYear={2030}
+                            endYear={2031}
+                            jobName="First Job"
+                            jobDescription="programer fucking hard programer fucking hard programer fucking hard programer fucking hard 
+                            programer fucking hard programer fucking hard programer fucking hard programer fucking hard "
+                        />
+                        <Experience 
+                            startYear={2031}
+                            endYear={2032}
+                            jobName="Second Job"
+                            jobDescription="programer fucking hard programer fucking hard programer fucking hard programer fucking hard 
+                            programer fucking hard programer fucking hard programer fucking hard programer fucking hard "
+                        />
+
+                        <hr style={{ borderTop: '3px solid #e22947' }} />
+                        <h2>Skill</h2>
+                        <Skill 
+                            skill="Javascript"
+                            progress={100}
+                        />
+                        <Skill 
+                            skill="HTML/CSS"
+                            progress={80}
+                        />
+                        <Skill 
+                            skill="Angular"
+                            progress={50}
+                        />
+                        <Skill 
+                            skill="C#/.Net"
+                            progress={70}
+                        />
+                        <Skill 
+                            skill="SQL Server"
+                            progress={40}
+                        />
+
                     </Cell>
                 </Grid>
             </div>
